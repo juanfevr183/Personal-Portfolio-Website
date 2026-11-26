@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portafolio académico y profesional de un estudiante de Ciencias de la Computación e Inteligencia Artificial.">
+<title>Portafolio | Juan Felipe</title>
+<style>
+:root{--bg:#080d18;--panel:#101a2b;--panel2:#142238;--text:#edf3ff;--muted:#a5b3c9;--line:rgba(190,210,245,.14);--accent:#75a7ff;--accent2:#8de0d0;--max:1120px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#172b49 0,transparent 38%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(8,13,24,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:800;letter-spacing:.08em}.brand span{color:var(--accent)}
+.navlinks{display:flex;gap:25px;color:var(--muted);font-size:.92rem}.navlinks a:hover{color:var(--text)}
+.hero{padding:100px 0 82px;display:grid;grid-template-columns:1.35fr .65fr;gap:50px;align-items:center;min-height:570px}
+.eyebrow{color:var(--accent2);font-size:.78rem;font-weight:750;letter-spacing:.18em;text-transform:uppercase}
+h1{font-size:clamp(2.8rem,6vw,5.3rem);line-height:1.02;letter-spacing:-.055em;margin:18px 0 22px}
+h1 span{color:var(--accent)}.lead{font-size:1.13rem;color:var(--muted);max-width:660px}
+.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.btn{padding:12px 19px;border-radius:12px;border:1px solid var(--line);font-weight:700;font-size:.92rem;transition:.2s}.btn.primary{background:var(--accent);color:#07101f;border-color:var(--accent)}.btn:hover{transform:translateY(-2px)}
+.hero-card{border:1px solid var(--line);border-radius:28px;padding:28px;background:linear-gradient(145deg,rgba(117,167,255,.13),rgba(141,224,208,.04));box-shadow:0 25px 80px rgba(0,0,0,.22)}
+.avatar{width:118px;height:118px;border-radius:28px;display:grid;place-items:center;font-size:2.5rem;font-weight:850;color:#07101f;background:linear-gradient(135deg,var(--accent),var(--accent2));margin-bottom:25px}
+.hero-card h2{margin:0 0 5px;font-size:1.35rem}.hero-card p{color:var(--muted);margin:0}.mini-line{height:1px;background:var(--line);margin:22px 0}.stat{display:flex;justify-content:space-between;color:var(--muted);font-size:.9rem;margin:8px 0}.stat strong{color:var(--text)}
+section{padding:74px 0;border-top:1px solid var(--line)}.section-head{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:30px}
+.kicker{color:var(--accent2);font-size:.75rem;font-weight:750;letter-spacing:.16em;text-transform:uppercase}
+h2.section-title{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.04em;margin:6px 0 0}.section-note{color:var(--muted);max-width:430px;margin:0}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.project{background:linear-gradient(160deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:20px;padding:25px;display:flex;flex-direction:column;min-height:280px;transition:.22s}
+.project:hover{transform:translateY(-4px);border-color:rgba(117,167,255,.5)}
+.project-top{display:flex;justify-content:space-between;gap:12px;align-items:center}.number{color:var(--accent);font-weight:800;font-size:.85rem;letter-spacing:.1em}.tag{font-size:.72rem;color:var(--accent2);border:1px solid rgba(141,224,208,.25);padding:5px 9px;border-radius:999px}
+.project h3{font-size:1.35rem;margin:20px 0 8px}.project p{color:var(--muted);margin:0 0 20px}.chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:auto}.chip{font-size:.75rem;padding:5px 9px;border-radius:8px;background:rgba(255,255,255,.06);color:#c7d4e8}
+.project-links{display:flex;gap:16px;margin-top:20px;font-size:.88rem;font-weight:700}.project-links a{color:var(--accent)}.project-links a:hover{text-decoration:underline}
+.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.skill{padding:18px;border:1px solid var(--line);border-radius:14px;background:rgba(16,26,43,.72);font-weight:650}.skill small{display:block;color:var(--muted);font-weight:400;margin-top:4px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:30px}.about p{color:var(--muted);margin-top:0}.note{border-left:2px solid var(--accent);padding:4px 0 4px 18px;color:var(--muted)}
+footer{padding:35px 0 45px;color:var(--muted);font-size:.88rem;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:760px){.navlinks{gap:13px;font-size:.82rem}.hero{grid-template-columns:1fr;padding:70px 0 55px;gap:30px}.hero-card{max-width:460px}.grid,.about{grid-template-columns:1fr}.skills{grid-template-columns:repeat(2,1fr)}.section-head{display:block}.section-note{margin-top:12px}}
+@media(max-width:460px){.wrap{width:min(100% - 28px,var(--max))}nav{height:auto;min-height:66px;align-items:flex-start;padding:17px 0;flex-direction:column}.navlinks{width:100%;justify-content:space-between}.hero{padding-top:55px}section{padding:55px 0}.project{padding:20px}.skills{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<header><nav class="wrap"><a class="brand" href="#inicio">JF<span>.</span> PORTAFOLIO</a><div class="navlinks"><a href="#proyectos">Proyectos</a><a href="#habilidades">Habilidades</a><a href="#sobre-mi">Sobre mí</a></div></nav></header>
+<main>
+<div class="wrap hero" id="inicio">
+  <div>
+    <div class="eyebrow">Portafolio académico · 2026</div>
+    <h1>Ideas que se convierten en <span>proyectos.</span></h1>
+    <p class="lead">Soy estudiante de Ciencias de la Computación e Inteligencia Artificial. Me interesa crear soluciones que conecten programación, tecnología y diseño, aprendiendo mediante proyectos prácticos.</p>
+    <div class="actions"><a class="btn primary" href="#proyectos">Explorar proyectos ↓</a><a class="btn" href="https://github.com/juanfevr183" target="_blank" rel="noopener">Ver GitHub ↗</a></div>
+  </div>
+  <aside class="hero-card">
+    <div class="avatar">JF</div>
+    <h2>Juan Felipe</h2><p>Estudiante · Computación e IA</p>
+    <div class="mini-line"></div>
+    <div class="stat"><span>Enfoque</span><strong>Software y diseño</strong></div>
+    <div class="stat"><span>Herramientas</span><strong>Python · CAD · Web</strong></div>
+    <div class="stat"><span>Ubicación</span><strong>Colombia</strong></div>
+  </aside>
+</div>
+<section id="proyectos"><div class="wrap">
+  <div class="section-head"><div><div class="kicker">Trabajo seleccionado</div><h2 class="section-title">Proyectos</h2></div><p class="section-note">Una selección de ejercicios y desarrollos académicos. Las descripciones de los modelos CAD se mantienen generales hasta incorporar imágenes y detalles de cada diseño.</p></div>
+  <div class="grid">
+    <article class="project"><div class="project-top"><span class="number">01 / MODELADO 3D</span><span class="tag">Simulación web</span></div><h3>Simulación 3D interactiva</h3><p>Proyecto de modelado y visualización tridimensional publicado en GitHub Pages. Permite presentar un diseño 3D básico desde el navegador.</p><div class="chips"><span class="chip">3D</span><span class="chip">Visualización</span><span class="chip">Web</span></div><div class="project-links"><a href="https://juanfevr183.github.io/Simulaci-n-3D/" target="_blank" rel="noopener">Ver proyecto ↗</a><a href="https://github.com/juanfevr183" target="_blank" rel="noopener">GitHub ↗</a></div></article>
+    <article class="project"><div class="project-top"><span class="number">02 / DISEÑO CAD</span><span class="tag">Modelado avanzado</span></div><h3>Diseño avanzado en Onshape</h3><p>Trabajo de diseño y modelado CAD desarrollado en Onshape. Se puede ampliar con capturas del modelo, sus componentes y el proceso de construcción.</p><div class="chips"><span class="chip">Onshape</span><span class="chip">CAD</span><span class="chip">Diseño 3D</span></div><div class="project-links"><a href="https://cad.onshape.com/documents/780ec07efe0ac4825e2b5a90/w/552a36923301100482e6ee07/e/15291414bb8c165102277773?renderMode=0&uiState=6b0894fb2e1a71c014106398" target="_blank" rel="noopener">Abrir modelo ↗</a></div></article>
+    <article class="project"><div class="project-top"><span class="number">03 / DISEÑO CAD</span><span class="tag">Exploración de diseño</span></div><h3>Modelos y ejercicios en Onshape</h3><p>Conjunto de diseños adicionales realizados en Onshape como parte de la exploración de herramientas de modelado tridimensional.</p><div class="chips"><span class="chip">Onshape</span><span class="chip">Modelado</span><span class="chip">Prototipado digital</span></div><div class="project-links"><a href="https://cad.onshape.com/documents/6d9c8e4be10800903f1b48f7/w/2fb045326b6abc8ab4a5ab2b/e/9f7a693a6f6e9df8cf7013f9" target="_blank" rel="noopener">Abrir diseño ↗</a></div></article>
+    <article class="project"><div class="project-top"><span class="number">04 / PROGRAMACIÓN</span><span class="tag">Python · Aplicación de consola</span></div><h3>Sistema de gestión de tienda</h3><p>Aplicación para administrar usuarios, inventario y ventas. Incluye importación y exportación de Excel, estadísticas y generación de reportes PDF.</p><div class="chips"><span class="chip">Python</span><span class="chip">JSON</span><span class="chip">openpyxl</span><span class="chip">ReportLab</span><span class="chip">POO</span></div><div class="project-links"><a href="https://github.com/juanfevr183" target="_blank" rel="noopener">Perfil de GitHub ↗</a></div></article>
+    <article class="project"><div class="project-top"><span class="number">05 / DISEÑO + CÓDIGO</span><span class="tag">Onshape</span></div><h3>Diseño y código básico</h3><p>Trabajo compartido en Onshape asociado a ejercicios de diseño y código básico. La explicación específica se completará al documentar el contenido del archivo.</p><div class="chips"><span class="chip">Onshape</span><span class="chip">Diseño</span><span class="chip">Lógica básica</span></div><div class="project-links"><a href="https://cad.onshape.com/documents/fa240c818759eedbb454979c/w/bc74c3ab1743e784633cd357/e/169f9ea6bce067da22b444a7?renderMode=0&uiState=6b089591964fffd7723301aa" target="_blank" rel="noopener">Abrir trabajo ↗</a></div></article>
+  </div>
+</div></section>
+<section id="habilidades"><div class="wrap"><div class="section-head"><div><div class="kicker">Caja de herramientas</div><h2 class="section-title">Habilidades y conocimientos</h2></div><p class="section-note">Áreas trabajadas en los proyectos recopilados hasta ahora.</p></div>
+<div class="skills"><div class="skill">Python<small>Programación y automatización</small></div><div class="skill">Excel<small>Importación y exportación de datos</small></div><div class="skill">ReportLab<small>Generación de documentos PDF</small></div><div class="skill">JSON<small>Almacenamiento de información</small></div><div class="skill">Onshape<small>Diseño y modelado CAD</small></div><div class="skill">Modelado 3D<small>Visualización tridimensional</small></div><div class="skill">GitHub Pages<small>Publicación web</small></div><div class="skill">Lógica de programación<small>Condicionales, ciclos y funciones</small></div></div></div></section>
+<section id="sobre-mi"><div class="wrap"><div class="section-head"><div><div class="kicker">Perfil</div><h2 class="section-title">Sobre mí</h2></div></div><div class="about"><p>Me encuentro en formación en Ciencias de la Computación e Inteligencia Artificial. Disfruto aprender construyendo: desde programas que resuelven tareas concretas hasta modelos digitales y experiencias interactivas.</p><div class="note">Mi objetivo es seguir fortaleciendo mis habilidades técnicas, explorar nuevas herramientas y convertir ideas en soluciones funcionales y bien diseñadas.</div></div></div></section>
+</main>
+<footer class="wrap"><span>© 2026 · Portafolio académico de Juan Felipe</span><span>Construido con HTML y CSS · Diseño adaptable</span></footer>
+</body></html>
